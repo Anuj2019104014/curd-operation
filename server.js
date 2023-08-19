@@ -24,7 +24,7 @@ var app=express();
 app.use(bodyparser.urlencoded({extended:false}))
 app.use(cors())
 
-var fetch=require('./fetch/fetch')
+var fetch=require('./fetch')
 app.use("/fetch",fetch)
 
 app.listen(3005)
